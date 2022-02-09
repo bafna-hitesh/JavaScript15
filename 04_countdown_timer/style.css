@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./asset/annie-spratt-IN5PZVrLY0Y-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 5rem 0;
+    color: rgb(241, 63, 32);
+}
+
+.countdown-container{
+    display: flex;
+    text-align: center;
+    color: aqua;
+}
+
+.big-text{
+    font-size: 5em;
+    margin: 0 2rem;
+    font-weight: 500;
+}
+
+.countdown-container span{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(17, 1, 1);
+}
