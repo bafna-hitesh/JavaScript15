@@ -35,6 +35,8 @@ function changeBgImg(imgSources) {
   document.body.style.backgroundPosition = "center center"
   document.body.style.backgroundRepeat = "no-repeat"
   document.body.style.backgroundAttachment = "fixed"
+  document.body.style.transition = "all 1.5s "
+
 }
 
 function countdown() {
@@ -52,6 +54,7 @@ function countdown() {
   minuteEl.textContent = formateTime(minutes)
   secondEl.textContent = formateTime(seconds)
 
+  if (minutes % 15 == 0) fetchData();
 }
 
 // console.log(imgURLS);
@@ -60,7 +63,7 @@ function formateTime(time) {
   return time < 10 ? `0${time}` : time
 }
 
-fetchData()
+
 countdown()
 
 setInterval(countdown, 1000)
