@@ -66,11 +66,10 @@ function loadQuiz() {
 
 const result = (userAns) => {
   const currentQuizData = quizData[currentQuestion];
-  userAns === currentQuizData.correct ? score++ : score--;
-  return score;
+  userAns === currentQuizData.correct ? score++ : null;
 };
 
-const unSelectRadio = () => {
+const deSelectRadio = () => {
   answerEle.forEach((answerEl) => {
     if (answerEl.checked) {
       return (answerEl.checked = false);
@@ -79,16 +78,16 @@ const unSelectRadio = () => {
 };
 
 function getAnswer() {
+  deSelectRadio();
   answerEle.forEach((answerEl) => {
     if (answerEl.checked) {
-      return result(answerEl.id);
+      result(answerEl.id);
     }
   });
 }
 
 submitBtn.addEventListener("click", () => {
   getAnswer();
-  unSelectRadio();
   currentQuestion++;
   currentQuestion < quizData.length
     ? loadQuiz()
