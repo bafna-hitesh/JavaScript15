@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: #d3cce3;
+  background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
+  background: linear-gradient(to right, #e9e4f0, #d3cce3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+  width: 400px;
+  padding: 1rem;
+}
+img {
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+header input {
+  background-color: #eee;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.fav-container {
+  background: #2980b9;
+  background: -webkit-linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+  background: linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+  padding: 0.25rem 1rem;
+  text-align: center;
+}
+
+.fav-container h3 {
+  color: #3b3b98;
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+  font-style: italic;
+}
+
+.fav-meals {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  /* overflow: auto; */
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+}
+.fav-meals li {
+  width: 85px;
+  margin: 5px;
+  flex-wrap: wrap;
+}
+.fav-meals li img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.fav-meals li span {
+  font-size: 1em;
+  min-width: 1%;
+}
+
+.meal {
+  border-radius: 3px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem;
+  overflow: hidden;
+}
+
+.meal-header {
+  position: relative;
+}
+
+.meal-header .random {
+  position: absolute;
+  top: 1rem;
+  background-color: #fff;
+  color: #c0392b;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.meal-header img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.meal-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.meal-body h4 {
+  margin: 0;
+  color: purple;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.meal-body button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.meal-body .fav-btn.active {
+  color: #f00;
+}
