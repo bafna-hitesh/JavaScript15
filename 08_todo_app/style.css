@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+h1 {
+  color: azure;
+  font-size: 10rem;
+  text-align: center;
+  opacity: 0.9;
+}
+
+form {
+  box-shadow: 0 4px 10px rgb(139, 194, 194);
+  margin: auto;
+  max-width: 100%;
+  width: 400px;
+}
+
+.todo-input {
+  /* font-size: 2rem; */
+  padding: 1rem 2rem;
+  width: 100%;
+  display: block;
+}
+
+.todo-input::placeholder {
+  color: #d5d5d5;
+}
+
+.todos {
+  background-color: #f3f0f0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.todos li {
+  border-top: 1px solid #c0c0c0;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  /* color: black; */
+}
+
+.todos li.completed {
+  text-decoration: line-through;
+  color: #b5b5b5;
+}
+
+body {
+  /* text-align: center; */
+  /* margin: 1rem 0; */
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  color: #bdbbbb;
+}
