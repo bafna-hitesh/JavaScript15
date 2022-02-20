@@ -35,6 +35,10 @@ ul {
 
 ul li label {
   cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  align-items: center;
 }
 
 li {

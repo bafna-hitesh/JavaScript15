@@ -70,23 +70,27 @@ const result = (userAns) => {
   return score;
 };
 
+const unSelectRadio = () => {
+  answerEle.forEach((answerEl) => {
+    if (answerEl.checked) {
+      return (answerEl.checked = false);
+    }
+  });
+};
+
 function getAnswer() {
   answerEle.forEach((answerEl) => {
     if (answerEl.checked) {
       return result(answerEl.id);
     }
-    answerEl.checked = false;
   });
-
-  // return alert("Select Your Anser⚠️");
 }
 
 submitBtn.addEventListener("click", () => {
   getAnswer();
-  // console.log(score);
-
+  unSelectRadio();
   currentQuestion++;
   currentQuestion < quizData.length
     ? loadQuiz()
-    : alert(`You Finish the Quiz, Your Score:${score}`);
+    : alert(`You Finish the Quiz, Your Score: ${score}`) ?? location.reload();
 });
