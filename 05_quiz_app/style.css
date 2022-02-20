@@ -45,6 +45,15 @@ li {
   padding: 0.5rem 0;
 }
 
+.answer {
+  height: 15px;
+  width: 15px;
+  vertical-align: middle;
+}
+.answer:hover {
+  cursor: pointer;
+}
+
 button {
   background-color: purple;
   display: block;
@@ -54,6 +63,7 @@ button {
   padding: 1rem;
   border: none;
   font-size: 1.1rem;
+  border-radius: 10px;
 }
 
 button:hover {
