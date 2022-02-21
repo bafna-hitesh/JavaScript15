@@ -3,9 +3,6 @@
   box-sizing: border-box;
 }
 
-body {
-}
-
 h1 {
   color: azure;
   font-size: 10rem;
@@ -25,8 +22,13 @@ form {
   padding: 1rem 2rem;
   width: 100%;
   display: block;
+  /* bo
+  
+  rder: none; */
 }
-
+.todo-input:focus {
+  outline: none;
+}
 .todo-input::placeholder {
   color: #d5d5d5;
 }
@@ -47,11 +49,6 @@ form {
 .todos li.completed {
   text-decoration: line-through;
   color: #b5b5b5;
-}
-
-body {
-  /* text-align: center; */
-  /* margin: 1rem 0; */
 }
 
 span {
